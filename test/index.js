@@ -5,7 +5,7 @@ import readDirNames from 'read-dir-names';
 
 import gitCloneRepo from '../lib';
 
-test('GIT CLONE REPO | clone a githib repo, with a URL', (t) => {
+test('GIT CLONE REPO | clone a github repo, with a URL', (t) => {
   const cwd = process.cwd();
 
   const valueCloned = gitCloneRepo('www.github.com/aichbauer/test-public');
@@ -18,7 +18,7 @@ test('GIT CLONE REPO | clone a githib repo, with a URL', (t) => {
   t.true(valueClonedDir.includes('test-public'));
 });
 
-test('GIT CLONE REPO | clone a githib repo, with "username/reponame", and destinantion', (t) => {
+test('GIT CLONE REPO | clone a github repo, with "username/reponame", and destination', (t) => {
   const cwd = process.cwd();
 
   const valueCloned = gitCloneRepo('aichbauer/test-public', { destination: 'test/test-public' });
@@ -31,7 +31,7 @@ test('GIT CLONE REPO | clone a githib repo, with "username/reponame", and dest
   t.true(valueClonedDir.includes('test-public'));
 });
 
-test('GIT CLONE REPO | clone a bitbucket repo, with "username/reponame", and host + destinantion', (t) => {
+test('GIT CLONE REPO | clone a bitbucket repo, with "username/reponame", and host + destination', (t) => {
   const cwd = process.cwd();
 
   const valueCloned = gitCloneRepo('Mr_LA/test-public', { host: 'bitbucket.com', destination: 'test/test-public' });
@@ -44,7 +44,7 @@ test('GIT CLONE REPO | clone a bitbucket repo, with "username/reponame", and h
   t.true(valueClonedDir.includes('test-public'));
 });
 
-test('GIT CLONE REPO | clone a bitbucket repo, with "username/reponame", and host +  absolute destinantion', (t) => {
+test('GIT CLONE REPO | clone a bitbucket repo, with "username/reponame", and host + absolute destination', (t) => {
   const cwd = process.cwd();
   const destination = path.join(cwd, 'test', 'test-public');
 
