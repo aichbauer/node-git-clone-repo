@@ -2,6 +2,10 @@
 
 > Clone a git repository
 
+[![Build Status](https://travis-ci.org/aichbauer/node-git-clone-repo.svg?branch=master)](https://travis-ci.org/aichbauer/node-git-clone-repo)
+[![Build status](https://ci.appveyor.com/api/projects/status/yk51yh1t7c2sworc?svg=true)](https://ci.appveyor.com/project/aichbauer/node-git-clone-repo)
+[![Coverage Status](https://coveralls.io/repos/github/aichbauer/node-git-clone-repo/badge.svg?branch=master)](https://coveralls.io/github/aichbauer/node-git-clone-repo?branch=master)
+
 ## Installation
 
 ```sh
