@@ -1,6 +1,6 @@
 {
   "name": "git-clone-repo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Clone a git repository",
   "main": "./dest/index.js",
   "scripts": {
